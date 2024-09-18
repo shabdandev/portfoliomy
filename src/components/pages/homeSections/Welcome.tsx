@@ -7,7 +7,7 @@ const Welcome = () => {
     <section id="home" className={scss.Welcome}>
       <Snowfall style={{ position: "fixed", zIndex: "99" }} />
       <div className={scss.content}>
-        <h1>HEY, I'M ARSLANBEKOV SHABDAN</h1>
+        <h1>HEY, I M ARSLANBEKOV SHABDAN</h1>
         <h2>
           A Result-Oriented Web Developer building and managing Websites and Web
           Applications that leads to the success of the overall product
