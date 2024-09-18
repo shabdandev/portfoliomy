@@ -1,0 +1,54 @@
+.Welcome {
+  height: 90vh;
+  background: rgb(5, 67, 112);
+  background-image: url("./../../../assets/images/e884fb6e0540fd99c7793fffa68b425e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .content {
+    backdrop-filter: blur(8px);
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: clamp(20px, 7vw, 40px);
+    h1 {
+      font-size: clamp(20px, 2vw, 55px);
+    }
+    h2 {
+      width: clamp(350px, 70vw, 1200px);
+      font-size: clamp(13px, 3vw, 32px);
+      line-height: 140%;
+      font-weight: 500;
+      color: #fff;
+    }
+    button {
+      width: clamp(75px, 30vw, 190px);
+      height: clamp(30px, 10vw, 50px);
+      background-image: linear-gradient(
+        to right,
+        #dc2424 0%,
+        #4a569d 51%,
+        #dc2424 100%
+      );
+      margin: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      border: 3px solid #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+      &:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+  }
+}

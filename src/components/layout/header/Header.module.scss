@@ -1,0 +1,79 @@
+.Header {
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  background-image: linear-gradient(
+    to right,
+    #dc2424c9 0%,
+    #4a569d 51%,
+    #08427c 100%
+  );
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      .logo {
+        .lego {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: clamp(5px, 3vw, 16px);
+          img {
+            width: clamp(28px, 4vw, 60px);
+            height: clamp(28px, 4vw, 60px);
+            border-radius: 50%;
+            border: clamp(0.3px, 2vw, 3px) solid blue;
+          }
+          h3 {
+            font-size: clamp(14px, 4vw, 20px);
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      .nav {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          li {
+            .link {
+              display: flex;
+              gap: 5px;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-weight: 700;
+              &.active {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+      .resume {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          width: 70px;
+          height: 25px;
+          background: rgb(231, 6, 6);
+          color: #fff;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

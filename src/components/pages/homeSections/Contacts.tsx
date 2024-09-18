@@ -34,10 +34,11 @@ const Contacts = () => {
   };
 
   return (
-    <section className={scss.Contacts}>
+    <section id="contact" className={scss.Contacts}>
       <div className="container">
         <div className={scss.content}>
           <form onSubmit={handleSubmit(onSubmit)}>
+            <h1>Telegram message</h1>
             <input
               placeholder="username"
               type="text"

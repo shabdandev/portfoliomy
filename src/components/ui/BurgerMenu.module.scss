@@ -1,0 +1,33 @@
+.BurgerMenu {
+  position: absolute;
+  top: 80px;
+  right: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .content {
+    padding: 15px;
+    background: #000000;
+    border-radius: 6px;
+    .nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        li {
+          a {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-start;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
